@@ -22,6 +22,17 @@ This is the rolling changelog for TShock for Terraria. Use past tense when addin
 * Added preliminary support for Terraria 1.4.4.4. (@SignatureBeef)
 * GrassSpreadEventArgs Color property has been changed from a Byte to a TileColorCache type. (@SignatureBeef)
 * SetDefaultsEventArgs now includes a nullable ItemVariant instance. (@SignatureBeef)
+* Use a string interpolation and escape single quotes when escaping tables (@drunderscore)
+* Removed obsolete resource files `TShockAPI/Resources.resx` and `TShockAPI/Resources.Designer.cs`. (@Arthri)
+* Fixed hardcore and mediumcore not banning on death when settings are enabled. This also alters the TSPlayer.Ban method to remove the force option which is no longer needed. (@SignatureBeef)
+* Plugins and ./bin dependencies are now loaded relative to the launcher, this improves the use of startup files (@SignatureBeef)
+* Added preliminary support for Terraria 1.4.4.5. (@drunderscore)
+  * For clarity sake, we're listing the individual changes to Terraria's version, despite the fact that this version only supports the latest one.
+* Don't allow players to sync loadout index whilst disabled (@drunderscore)
+* Fixed painting wall/tile being rejected from hand of creation. (@Rozen4334)
+* Added a second `Utils.TryParseTime` method for parsing large, positive time spans. (@punchready)
+* Fixed `/tempgroup` breaking on durations greater than roughly 24 days. (@punchready)
+* Fixed player not being checked for permissions to use the Shellphone (Ocean), Shellphone (Underworld) and Shellphone (Spawn). (@hufang360)
 
 ## TShock 4.5.18
 * Fixed `TSPlayer.GiveItem` not working if the player is in lava. (@gohjoseph)
